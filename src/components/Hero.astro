@@ -1,0 +1,35 @@
+---
+import "@fontsource/poppins";
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/800.css";
+import LinkButton from "./LinkButton.astro";
+---
+
+<section class="h-screen flex flex-col justify-center items-center gap-10 text-white">
+  <picture>
+    <img src="/public/avatar.svg" alt="avatar" />
+  </picture>
+  <section class="w-screen sm:max-w-[750px] text-center flex flex-col gap-7">
+    <h1 class="font-extrabold text-4xl sm:text-[55px] sm:leading-[63px]">
+      Me dedico a la programación y a crear contenido <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF8660] to-[#9A33FF]">sobre ello!</span>
+    </h1>
+    <p class="font-light text-lg">
+      ¡Hola! Soy Eduardo Molina, también conocido como 7R0N1X, y me encuentro
+      explorando el fascinante mundo del desarrollo web. Actualmente, estoy
+      utilizando Astro, JavaScript y Tailwind CSS para crear experiencias en
+      línea únicas.
+    </p>
+  </section>
+  <section class="flex items-center gap-3">
+    <LinkButton href="mailto:info.tronix.dev@gmail.com" name="Contacto" class="bg-white text-black font-semibold py-4 px-7 rounded-[50px]"/>
+    <LinkButton href="#" name="Descargar CV" class="border-2 font-semibold py-4 px-7 rounded-[50px]"/>
+  </section>
+</section>
+
+<style>
+  h1,
+  p {
+    font-family: "Poppins", sans-serif;
+  }
+</style>

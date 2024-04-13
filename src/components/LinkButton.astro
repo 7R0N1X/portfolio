@@ -1,0 +1,13 @@
+---
+import "@fontsource/poppins";
+
+const { href, name } = Astro.props;
+---
+
+<a href={href} {...Astro.props}>{name}</a>
+
+<style>
+  a {
+    font-family: "Poppins", sans-serif;
+  }
+</style>
