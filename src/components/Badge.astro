@@ -1,0 +1,7 @@
+---
+const { name } = Astro.props;
+---
+
+<span class={`flex justify-center items-center gap-2 text-xs font-semibold px-2.5 py-0.5 rounded ${Astro.props.class}`}>
+  <slot /> {name}
+</span>

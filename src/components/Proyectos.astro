@@ -1,0 +1,87 @@
+---
+import "@fontsource/poppins/800.css";
+
+import Badge from "./Badge.astro";
+
+import AstroIcon from "../icons/AstroIcon.astro";
+import TailwindCSSIcon from "../icons/TailwindCSSIcon.astro";
+import PythonIcon from "../icons/PythonIcon.astro";
+import OpenCV from "../icons/OpenCVIcon.astro";
+import GoogleColab from "../icons/GoogleColab.astro";
+
+const TAGS = {
+  ASTRO: {
+    name: "Astro",
+    class: "bg-[#0D0F14] text-white",
+    icon: AstroIcon,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#0F172A] text-white",
+    icon: TailwindCSSIcon,
+  },
+  PYTHON: {
+    name: "Python",
+    class: "bg-[#1E415E] text-white",
+    icon: PythonIcon,
+  },
+  OPENCV: {
+    name: "Open CV",
+    class: "bg-[#000] text-white",
+    icon: OpenCV,
+  },
+  GOOGLECOLAB: {
+    name: "Google Colab",
+    class: "bg-[#E8710A] text-white",
+    icon: GoogleColab,
+  },
+};
+
+const PROYECTOS = [
+  {
+    title: "GYM24",
+    description:
+      "Proyecto de aprendizaje profundo que utiliza Python, OpenCV y Redes Neuronales Convolucionales para identificar emociones en tiempo real.",
+    link: "https://gym24-three.vercel.app/",
+    github: "https://github.com/7R0N1X/gym24",
+    image: "/proyectos/2.webp",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
+  },
+  {
+    title: "Reconocimiento de emociones",
+    description:
+      "Proyecto de aprendizaje profundo que utiliza Python, OpenCV y Redes Neuronales Convolucionales para identificar emociones en tiempo real.",
+    link: "",
+    github: "https://github.com/7R0N1X/Reconocimiento-Emociones-Faciales.git",
+    image: "/proyectos/1.webp",
+    tags: [TAGS.PYTHON, TAGS.OPENCV, TAGS.GOOGLECOLAB],
+  },
+];
+---
+
+<h2 class="uppercase text-center font-extrabold text-4xl mb-10 bg-clip-text text-transparent bg-gradient-to-b from-[#FF8660] to-[#D5491D]">Proyectos</h2>
+<section class="w-full flex flex-col justify-center items-center sm:flex-row gap-4 sm:gap-10">
+  {PROYECTOS.map(({ image, title, description, tags }) => (
+    <article class="max-w-[350px] max-h-[417px]">
+      <img src={image} alt={`Captura de pantalla del proyecto ${title}`} class="w-full" />
+      <h3 class="text-xl font-semibold mt-3 mb-3 uppercase">{title}</h3>
+      <ul class="flex gap-2">
+        {tags.map((tag) => (
+          <li class="flex justify-center items-center">
+            <Badge class={tag.class}>
+              <tag.icon class="size-3" /> {tag.name}
+            </Badge>
+          </li>
+        ))}
+      </ul>
+      <p class="text-base mb-4 text-pretty mt-3">{description}</p>
+    </article>
+  ))}
+</section>
+
+<style>
+  h2{
+    font-family: "Poppins", sans-serif;
+  }
+</style>
+
