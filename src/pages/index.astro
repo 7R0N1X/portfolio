@@ -1,11 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Contenedor from "../components/Contenedor.astro";
 import Hero from "../components/Hero.astro";
+import Proyectos from "../components/Proyectos.astro";
+import Contenedor from "../components/Contenedor.astro";
 ---
 
 <Layout title="7R0N1X">
 	<main>
-		<Contenedor class="h-screen flex flex-col justify-center items-center gap-10"><Hero /></Contenedor>		
+		<Contenedor class="h-screen flex flex-col justify-center items-center gap-10 text-white"><Hero /></Contenedor>
+		<Contenedor class="px-5"><Proyectos /></Contenedor>
 	</main>
 </Layout>
