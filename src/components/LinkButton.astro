@@ -4,7 +4,7 @@ import "@fontsource/poppins";
 const { href, name, title } = Astro.props;
 ---
 
-<a href={href} {...Astro.props} title={title}> <slot /> {name}</a>
+<a href={href} target="_blank" title={title} {...Astro.props}> <slot /> {name}</a>
 
 <style>
   a {
