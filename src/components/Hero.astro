@@ -7,32 +7,21 @@ import LinkButton from "./LinkButton.astro";
 ---
 
 <picture>
-  <img src="/avatar.svg" alt="avatar" />
+  <img src="/avatar.svg" alt="avatar" class="w-full" />
 </picture>
-<section class="w-full sm:max-w-[750px] text-center flex flex-col gap-7">
+<section class="w-full sm:max-w-[750px] text-center flex flex-col gap-7 text-white/90">
   <h1 class="font-extrabold text-4xl 2xl:text-[55px] sm:leading-[63px]">
-    ¡Hola! Soy <span
-      class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF8660] to-[#9A33FF]"
-      >7R0N1X</span
-    >
+    ¡Hola! Soy 7R0N1X
   </h1>
-  <p class="font-light text-lg text-justify whitespace-normal">
+  <p class="font-light sm:text-lg text-justify sm:text-center">
     Apasionado desarrollador web con experiencia en la creación de sitios web
     dinámicos y atractivos. Mi enfoque principal es desarrollar soluciones web
     que sean tanto funcionales como estéticamente agradables.
   </p>
 </section>
 <section class="flex items-center gap-3">
-  <LinkButton
-    href="mailto:info.tronix.dev@gmail.com"
-    name="Contacto"
-    class="bg-white text-black font-semibold py-4 px-7 rounded-[50px]"
-  />
-  <LinkButton
-    href="#"
-    name="Descargar CV"
-    class="border-2 font-semibold py-4 px-7 rounded-[50px]"
-  />
+  <LinkButton href="mailto:info.tronix.dev@gmail.com" name="Contacto" class="bg-white/90 text-black font-semibold py-3 px-5 rounded-[50px]" />
+  <LinkButton href="#" name="Descargar CV" class="text-white/90 border-2 border-white/90 font-semibold py-3 px-5 rounded-[50px]" />
 </section>
 
 <style>
