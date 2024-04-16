@@ -1,0 +1,44 @@
+---
+import "@fontsource/poppins/700.css";
+
+const EXPERIENCIAS = [
+  {
+    title: "Desarrollador web",
+    company: "Dirección de Innovación y Emprendimiento Innova UTM",
+    date: "Oct. 2023 - Dic. 2023",
+    description:
+      "Contribuí al diseño de un prototipo de página web para la Facultad de Ciencias Agropecuarias. Mis responsabilidades incluyeron la identificación de los requerimientos de los usuarios, el diseño de interfaces y la navegabilidad no operativa, así como la creación de componentes dinámicos para mejorar la experiencia del usuario.",
+  },
+  {
+    title: "Ingeniero de sistemas",
+    company: "Comando de la Subzona Manabí Nº13 Policía Nacional del Ecuador",
+    date: "May. 2023 - Jun. 2023",
+    description:
+      "Desempeñé un papel integral en el departamento de Soporte Operativo. Me encargué de una variedad de actividades destinadas a garantizar el funcionamiento óptimo de los equipos informáticos, que incluyeron tareas de mantenimiento, recorridos para familiarizarme con las instalaciones del centro de datos, y asistencia en la configuración de servidores.",
+  },
+];
+---
+
+<h2 class="uppercase text-center font-extrabold text-3xl mb-10 bg-clip-text text-transparent bg-gradient-to-b from-[#f8f9fa] to-[#ced4da]">Experiencia</h2>
+
+{
+  EXPERIENCIAS.map(({ title, company, date, description }) => (
+    <article class="w-full sm:max-w-[810px] flex flex-col text-[#8491a0]">
+      <h3 class="font-bold text-xl text-white">{title}</h3>
+      <section class="sm:flex justify-between items-center">
+        <h4 class="font-semibold mt-1">{company}</h4>
+        <span class="text-sm">{date}</span>
+      </section>
+      <p class="text-sm text-justify mt-2 mb-12">{description}</p>
+    </article>
+  ))
+}
+
+<style>
+  h3,
+  h4,
+  span,
+  p {
+    font-family: "Poppins", sans-serif;
+  }
+</style>
