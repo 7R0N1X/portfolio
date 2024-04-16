@@ -1,10 +1,10 @@
 ---
 import "@fontsource/poppins";
 
-const { href, name } = Astro.props;
+const { href, name, title } = Astro.props;
 ---
 
-<a href={href} {...Astro.props}>{name}</a>
+<a href={href} {...Astro.props} title={title}> <slot /> {name}</a>
 
 <style>
   a {
