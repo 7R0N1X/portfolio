@@ -13,27 +13,27 @@ import GithubIcon from "../icons/GithubIcon.astro";
 const TAGS = {
   ASTRO: {
     name: "Astro",
-    class: "bg-[#0D0F14] text-white/80",
+    class: "bg-[#0D0F14] text-white/80 border border-white/20 rounded-[50px]",
     icon: AstroIcon,
   },
   TAILWIND: {
     name: "Tailwind CSS",
-    class: "bg-[#0F172A] text-white/80",
+    class: "bg-[#0F172A] text-white/80 border border-white/20 rounded-[50px]",
     icon: TailwindCSSIcon,
   },
   PYTHON: {
     name: "Python",
-    class: "bg-[#1E415E] text-white/80",
+    class: "bg-[#1E415E] text-white/80 border border-white/20 rounded-[50px]",
     icon: PythonIcon,
   },
   OPENCV: {
     name: "Open CV",
-    class: "bg-[#000] text-white/80",
+    class: "bg-[#000] text-white/80 border border-white/20 rounded-[50px]",
     icon: OpenCV,
   },
   GOOGLECOLAB: {
     name: "Google Colab",
-    class: "bg-[#E8710A] text-white/80",
+    class: "bg-[#E8710A] text-white/80 border border-white/20 rounded-[50px]",
     icon: GoogleColab,
   },
 };
@@ -51,7 +51,7 @@ const PROYECTOS = [
   {
     title: "Reconocimiento de Emociones",
     description:
-      "Proyecto de aprendizaje profundo que utiliza Python, OpenCV y Redes Neuronales Convolucionales para identificar emociones en tiempo real.",
+      "Proyecto de aprendizaje profundo que utiliza Python, OpenCV y Redes Neuronales Convolucionales.",
     link: "",
     github: "https://github.com/7R0N1X/Reconocimiento-Emociones-Faciales.git",
     image: "/proyectos/1.webp",
@@ -78,10 +78,10 @@ const PROYECTOS = [
               </li>
             ))}
           </ul>
-          <p class="text-pretty mb-4 mt-3 text-gray-400 text-justify tracking-wide">{description}</p>
+          <p class="mb-4 mt-3 text-gray-400 text-justify sm:text-start tracking-wide text-pretty">{description}</p>
           <section class="flex gap-3 text-white">
-            <LinkButton href={link} name="Preview" title="Vista previa" class=" flex items-center gap-2 border rounded-full px-3 py-2 text-sm transition hover:scale-105"><PreviewIcon class="size-5" /></LinkButton>
-            <LinkButton href={github} name="Code" title="Código fuente" class=" flex items-center gap-2 border rounded-full px-3 py-2 text-sm transition hover:scale-105"><GithubIcon class="size-5" /></LinkButton>
+            <LinkButton href={link} name="Preview" title="Vista previa" class="flex items-center gap-2 border border-white/20 rounded-full px-3 py-2 text-sm transition hover:scale-105"><PreviewIcon class="size-5" /></LinkButton>
+            <LinkButton href={github} name="Code" title="Código fuente" class="flex items-center gap-2 border border-white/20 rounded-full px-3 py-2 text-sm transition hover:scale-105"><GithubIcon class="size-5" /></LinkButton>
           </section>
         </section>
       </article>

@@ -1,32 +1,28 @@
 ---
-import "@fontsource/poppins";
-import "@fontsource/poppins/300.css";
-import "@fontsource/poppins/600.css";
-import "@fontsource/poppins/800.css";
 import LinkButton from "./LinkButton.astro";
+import MailIcon from "../icons/MailIcon.astro";
+import CVIcon from "../icons/CVIcon.astro";
 ---
 
-<picture>
-  <img src="/avatar.svg" alt="avatar" class="w-full" />
-</picture>
-<section class="w-full sm:max-w-[750px] text-center flex flex-col gap-7 text-white/90">
-  <h1 class="font-extrabold text-4xl 2xl:text-[55px] sm:leading-[63px]">
-    ¡Hola! Soy 7R0N1X
-  </h1>
-  <p class="font-light sm:text-lg text-justify sm:text-center">
-    Apasionado desarrollador web con experiencia en la creación de sitios web
-    dinámicos y atractivos. Mi enfoque principal es desarrollar soluciones web
-    que sean tanto funcionales como estéticamente agradables.
-  </p>
+<section class="w-full px-5 lg:px-0 sm:max-w-[810px] flex flex-col items-start gap-4 mt-12">
+  <picture class="w-full flex justify-start items-center gap-4">
+    <img src="/avatar.svg" alt="avatar" class="size-16" />
+    <LinkButton href="https://www.linkedin.com/in/ing-eduardomolina" name="Disponible para trabajar" title="Contactar" class="border border-white/20 px-3 py-1 text-sm rounded-full cursor-pointer bg-[#232323] backdrop-blur-3xl whitespace-nowrap" />
+  </picture>
+  <section class="w-full sm:max-w-[750px] flex flex-col gap-4 text-white/90">
+    <h1 class="font-extrabold text-3xl sm:text-4xl">¡Hola! Soy 7R0N1X</h1>
+    <p class="font-light sm:text-lg mt-5 mb-5 text-pretty">
+      Apasionado del desarrollo web, siempre en búsqueda de nuevos conocimientos
+      y técnicas para perfeccionarse constantemente en este apasionante campo.
+      Comprometido con la excelencia y la innovación.
+    </p>
+  </section>
+  <section class="flex items-center gap-3">
+    <LinkButton href="mailto:info.tronix.dev@gmail.com" name="Contáctame" title="Contactar con 7R0N1X" class="bg-[#232323] border border-white/20 text-white px-3 py-1 rounded-[50px] flex items-center gap-1">
+      <MailIcon class="size-4" />
+    </LinkButton>
+    <LinkButton href="#" name="Descargar CV" title="Descargar CV" class="bg-[#232323] border border-white/20 text-white px-3 py-1 rounded-[50px] flex items-center gap-1">
+      <CVIcon class="size-4" />
+    </LinkButton>
+  </section>
 </section>
-<section class="flex items-center gap-3">
-  <LinkButton href="mailto:info.tronix.dev@gmail.com" name="Contacto" title="Contactar con 7R0N1X" class="bg-white/90 text-black font-semibold py-3 px-5 rounded-[50px]" />
-  <LinkButton href="#" name="Descargar CV" title="Descargar CV" class="text-white/90 border-2 border-white/90 font-semibold py-3 px-5 rounded-[50px]" />
-</section>
-
-<style>
-  h1,
-  p {
-    font-family: "Poppins", sans-serif;
-  }
-</style>
