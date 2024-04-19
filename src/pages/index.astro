@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+import Stack from "../components/Stack.astro";
 import Proyectos from "../components/Proyectos.astro";
 import Contenedor from "../components/Contenedor.astro";
 import Experiencia from "../components/Experiencia.astro";
@@ -8,7 +9,8 @@ import Experiencia from "../components/Experiencia.astro";
 
 <Layout title="Portfolio de 7R0N1X">
 	<main>
-		<Contenedor class="h-[600px] flex flex-col justify-center items-center text-white"><Hero /></Contenedor>
+		<Contenedor class="h-[550px] flex flex-col justify-end items-center text-white"><Hero /></Contenedor>
+		<Contenedor class="mt-16 mb-16 flex flex-col justify-center items-center text-white"><Stack /></Contenedor>
 		<Contenedor id="proyectos" class="flex flex-col justify-center items-center"><Proyectos /></Contenedor>
 		<Contenedor id="experiencia" class="flex flex-col justify-center items-center mb-10"><Experiencia /></Contenedor>
 	</main>
