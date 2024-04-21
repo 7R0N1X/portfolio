@@ -61,14 +61,14 @@ const PROYECTOS = [
 ---
 
 <section>
-  <h2 class="flex items-center gap-3 text-center font-bold text-3xl mb-5 text-white"><CodeIcon class="size-7" /> Proyectos</h2>
+  <h2 class="flex items-center gap-3 text-center font-bold text-3xl mb-5 text-white/70"><CodeIcon class="size-7" /> Proyectos</h2>
 
   {
     PROYECTOS.map(({ image, title, description, link, github, tags }) => (
       <article class="w-full sm:max-w-[810px] flex flex-col sm:flex-row gap-5 mb-12">
         <img src={image} alt={`Captura de pantalla del proyecto ${title}`} class="object-cover h-60 rounded-xl" />
         <section>
-          <h3 class="text-2xl font-semibold sm:mt-3 mb-3 text-gray-100">{title}</h3>
+          <h3 class="text-2xl font-semibold sm:mt-3 mb-3 text-white/70">{title}</h3>
           <ul class="flex gap-2">
             {tags.map((tag) => (
               <li class="flex justify-center items-center">
@@ -79,7 +79,7 @@ const PROYECTOS = [
             ))}
           </ul>
           <p class="mb-4 mt-3 text-gray-400 text-justify sm:text-start tracking-wide text-pretty">{description}</p>
-          <section class="flex gap-3 text-white">
+          <section class="flex gap-3 text-white/70">
             <LinkButton href={link} name="Preview" title="Vista previa" class="flex items-center gap-2 border border-white/20 rounded-full px-3 py-2 text-sm transition hover:scale-105"><PreviewIcon class="size-5" /></LinkButton>
             <LinkButton href={github} name="Code" title="Código fuente" class="flex items-center gap-2 border border-white/20 rounded-full px-3 py-2 text-sm transition hover:scale-105"><GithubIcon class="size-5" /></LinkButton>
           </section>

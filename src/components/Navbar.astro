@@ -1,5 +1,5 @@
 <header class="w-full flex justify-center items-center mt-2 fixed top-0 z-10">
-  <nav class="px-3 text-sm text-white rounded-full bg-[#232323] border border-white/10">
+  <nav id="nav" class="px-3 text-sm text-white/70 rounded-full backdrop-blur-lg border-white/10">
     <ul class="flex [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2 [&>li>a]:font-semibold">
       <li><a href="#" class="transition-colors hover:bg-clip-text hover:text-gray-300">Inicio</a></li>
       <li><a href="#proyectos" class="transition-colors hover:bg-clip-text hover:text-gray-300">Proyectos</a></li>
@@ -8,3 +8,12 @@
     </ul>
   </nav>
 </header>
+
+<script>
+  const $nav = document.getElementById("nav");
+
+  window.addEventListener("scroll", function () {
+    var scrollPosition = window.scrollY;
+    scrollPosition ? $nav.classList.add("border") :  $nav.classList.remove("border");
+  });
+</script>

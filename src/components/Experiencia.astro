@@ -20,14 +20,14 @@ const EXPERIENCIAS = [
 ---
 
 <section>
-  <h2 class="flex items-center gap-3 font-bold text-3xl mb-5 text-white">
+  <h2 class="flex items-center gap-3 font-bold text-3xl mb-5 text-white/70">
     <BriefcaseIcon class="size-7" /> Experiencia laboral
   </h2>
   <section class="flex flex-col gap-12">
     {
       EXPERIENCIAS.map(({ title, company, date, description }) => (
-        <article class="w-full sm:max-w-[810px] flex flex-col text-gray-300">
-          <h3 class="font-bold text-xl text-white">{title}</h3>
+        <article class="w-full sm:max-w-[810px] flex flex-col text-white/70">
+          <h3 class="font-bold text-xl text-white/70">{title}</h3>
           <section class="sm:flex justify-between items-center">
             <h4 class="font-semibold mt-1">{company}</h4>
             <span class="text-sm">{date}</span>

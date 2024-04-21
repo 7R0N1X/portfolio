@@ -1,29 +1,29 @@
 ---
 import LinkButton from "./LinkButton.astro";
-import InstagramIcon from "../icons/InstagramIcon.astro";
-import XIcon from "../icons/XIcon.astro";
-import TiktokIcon from "../icons/TiktokIcon.astro";
-import GithubIcon2 from "../icons/GithubIcon2.astro";
-import LinkdInIcon from "../icons/LinkdInIcon.astro";
-import MailIcon from "../icons/MailIcon.astro";
+import InstagramIcon from "../icons/social network icons/InstagramIcon.astro";
+import XIcon from "../icons/social network icons/XIcon.astro";
+import TiktokIcon from "../icons/social network icons/TiktokIcon.astro";
+import GithubIcon from "../icons/social network icons/GithubIcon.astro";
+import LinkdInIcon from "../icons/social network icons/LinkdInIcon.astro";
+import MailIcon from "../icons/social network icons/MailIcon.astro";
 ---
 
 <footer class="bg-[#191919] flex justify-center items-center py-20" id="contacto">
-  <section class="w-full px-5 lg:px-0 sm:max-w-[810px] flex flex-col items-start">
-    <h2 class="font-bold text-2xl mb-8 text-left text-white">Contacto</h2>
-    <p class="font-light mb-5 text-justify text-gray-400">
+  <section class="w-full px-5 lg:px-0 sm:max-w-[810px] flex flex-col items-start text-white/70">
+    <h2 class="font-bold text-2xl mb-8 text-left">Contacto</h2>
+    <p class="font-light mb-5 text-justify">
       Ingeniero en Sistemas de Información, listo para aplicar mi formación y
       continuar aprendiendo en este campo. ¡Espero tener la oportunidad de
       colaborar contigo en proyectos emocionantes! No dudes en ponerte en
       contacto conmigo.
     </p>
-    <LinkButton href="mailto:info.tronix.dev@gmail.com" name="info.tronix.dev@gmail.com" title="Contactar con 7R0N1X"class="font-semibold flex items-center gap-2 mb-10 text-[#8491a0]"><MailIcon class="size-5" /></LinkButton>
-    <section class="flex gap-7 max-w[676px] text-white">
-      <LinkButton href="https://www.instagram.com/tronix.dev" title="Instagram"><InstagramIcon class="size-5" /></LinkButton>
-      <LinkButton href="https://twitter.com/X7R0N1X" title="Twitter"><XIcon class="size-5" /></LinkButton>
-      <LinkButton href="https://www.tiktok.com/@tronix.dev" title="Tiktok"><TiktokIcon class="size-5" /></LinkButton>
-      <LinkButton href="https://github.com/7R0N1X" title="Github"><GithubIcon2 class="size-5" /></LinkButton>
-      <LinkButton href="https://www.linkedin.com/in/ing-eduardomolina" title="LinkedIn"><LinkdInIcon class="size-5" /></LinkButton>
+    <LinkButton href="mailto:info.tronix.dev@gmail.com" name="info.tronix.dev@gmail.com" title="Contactar con 7R0N1X"class="font-semibold flex items-center gap-2 mb-10 text-white/70"><MailIcon class="size-5" /></LinkButton>
+    <section class="flex gap-7 max-w[676px]">
+      <LinkButton href="https://www.instagram.com/tronix.dev" title="Instagram" class="transition hover:scale-105 hover:text-[#E4405F]"><InstagramIcon class="size-5" /></LinkButton>
+      <LinkButton href="https://twitter.com/X7R0N1X" title="Twitter" class="transition hover:scale-105 hover:text-[#000000]"><XIcon class="size-5" /></LinkButton>
+      <LinkButton href="https://www.tiktok.com/@tronix.dev" title="Tiktok" class="transition hover:scale-105 hover:text-[#000000]"><TiktokIcon class="size-5" /></LinkButton>
+      <LinkButton href="https://github.com/7R0N1X" title="Github" class="transition hover:scale-105 hover:text-[#000000]"><GithubIcon class="size-5" /></LinkButton>
+      <LinkButton href="https://www.linkedin.com/in/ing-eduardomolina" title="LinkedIn" class="transition hover:scale-105 hover:text-[#0A66C2]"><LinkdInIcon class="size-5" /></LinkButton>
     </section>
   </section>
 </footer>

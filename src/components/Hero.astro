@@ -1,27 +1,27 @@
 ---
 import LinkButton from "./LinkButton.astro";
-import MailIcon from "../icons/MailIcon.astro";
+import MailIcon from "../icons/social network icons/MailIcon.astro";
 import CVIcon from "../icons/CVIcon.astro";
 ---
 
 <section class="w-full lg:px-0 sm:max-w-[810px] flex flex-col items-start gap-4 mt-12">
   <picture class="w-full flex justify-start items-center gap-4">
     <img src="/avatar.svg" alt="avatar" class="size-16" />
-    <LinkButton href="https://www.linkedin.com/in/ing-eduardomolina" name="Disponible para trabajar" title="Contactar" class="border border-white/20 px-3 py-1 text-sm rounded-full cursor-pointer bg-[#232323] backdrop-blur-3xl whitespace-nowrap" />
+    <LinkButton href="https://www.linkedin.com/in/ing-eduardomolina" name="Disponible para trabajar" title="Contactar" class="backdrop-blur-sm border border-white/20 px-3 py-1 text-sm rounded-full cursor-pointer whitespace-nowrap text-white/70" />
   </picture>
-  <section class="w-full sm:max-w-[750px] flex flex-col gap-4 text-white/90">
+  <section class="w-full sm:max-w-[750px] flex flex-col gap-4 text-white/70">
     <h1 class="font-extrabold text-3xl sm:text-4xl">¡Hola! Soy 7R0N1X</h1>
-    <p class="font-light sm:text-lg mt-5 mb-5 text-pretty tracking-wide">
-      Apasionado del desarrollo web, siempre en búsqueda de nuevos conocimientos
-      y técnicas para perfeccionarme constantemente en este apasionante campo.
-      Estoy comprometido con la excelencia y la innovación.
+    <p class="font-light sm:text-lg mt-5 mb-5 text-pretty tracking-wide text-gray-400">
+      Apasionado del <span class="text-[#E34F26]">desarrollo web</span>, siempre en búsqueda de <span class="text-[#1572B6]">nuevos conocimientos</span>
+      y <span class="text-[#BC52EE]">técnicas</span> para perfeccionarme constantemente en este apasionante campo.
+      Estoy <span class="text-[#7952B3]">comprometido</span> con la <span class="text-[#06B6D4]">excelencia y la innovación</span>.
     </p>
   </section>
-  <section class="flex items-center gap-3">
-    <LinkButton href="mailto:info.tronix.dev@gmail.com" name="Contáctame" title="Contactar con 7R0N1X" class="bg-[#232323] border border-white/20 text-white px-3 py-1 rounded-[50px] flex items-center gap-1">
+  <section class="flex items-center gap-3 text-white/70">
+    <LinkButton href="mailto:info.tronix.dev@gmail.com" name="Contáctame" title="Contactar con 7R0N1X" class="border border-white/20 px-3 py-1 rounded-[50px] flex items-center gap-2 transition-all hover:scale-105">
       <MailIcon class="size-4" />
     </LinkButton>
-    <LinkButton href="#" name="Descargar CV" title="Descargar CV" class="bg-[#232323] border border-white/20 text-white px-3 py-1 rounded-[50px] flex items-center gap-1">
+    <LinkButton href="#" name="Descargar CV" title="Descargar CV" class="border border-white/20 px-3 py-1 rounded-[50px] flex items-center gap-2 transition-all hover:scale-105">
       <CVIcon class="size-4" />
     </LinkButton>
   </section>
