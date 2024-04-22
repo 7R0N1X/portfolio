@@ -2,11 +2,14 @@
 import LinkButton from "./LinkButton.astro";
 import MailIcon from "../icons/social network icons/MailIcon.astro";
 import CVIcon from "../icons/CVIcon.astro";
+
+import Avatar from "../assets/avatar.svg"
+import { Image } from "astro:assets";
 ---
 
 <section class="w-full lg:px-0 sm:max-w-[810px] flex flex-col items-start gap-4 mt-12">
   <picture class="w-full flex justify-start items-center gap-4">
-    <img src="/avatar.svg" alt="avatar" class="size-16 animate-fade-in-right" />
+    <Image src={Avatar} alt="avatar" class="size-16 animate-fade-in-right" />
     <LinkButton href="https://www.linkedin.com/in/ing-eduardomolina" name="Disponible para trabajar" title="Contactar" class="backdrop-blur-sm border border-white/20 px-3 py-1 text-sm rounded-full cursor-pointer whitespace-nowrap text-white/70 animate-tada" />
   </picture>
   <section class="w-full sm:max-w-[750px] flex flex-col gap-4 text-white/70">
