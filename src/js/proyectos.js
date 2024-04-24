@@ -62,6 +62,6 @@ export const PROYECTOS = [
     link: "",
     github: "https://github.com/7R0N1X/Reconocimiento-Emociones-Faciales.git",
     image: Proyecto1,
-    tags: [TAGS.PYTHON, TAGS.OPENCV, TAGS.GOOGLECOLAB],
+    tags: [TAGS.PYTHON, TAGS.OPENCV],
   },
 ];
