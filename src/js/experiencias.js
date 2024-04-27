@@ -1,6 +1,12 @@
 export const EXPERIENCIAS = [
   {
     title: "Desarrollador web",
+    company: "Freelance",
+    date: "Actualmente...",
+    description: "Creo sitios web responsivos para diversos clientes, adaptándome a sus necesidades y proporcionando soluciones efectivas para mejorar su presencia en línea."
+  },
+  {
+    title: "Desarrollador web",
     company: "Dirección de Innovación y Emprendimiento Innova UTM",
     date: "Oct. 2023 - Dic. 2023",
     description:
