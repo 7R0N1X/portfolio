@@ -28,8 +28,12 @@ import { PROYECTOS } from "../js/proyectos";
           </ul>
           <p class="mb-4 mt-3 text-gray-400 text-justify sm:text-start tracking-wide text-pretty">{description}</p>
           <section class="flex gap-3 text-white/70">
-            <LinkButton href={link} name="Preview" title="Vista previa" class="flex items-center gap-2 border border-white/20 rounded-full px-3 py-2 text-sm transition hover:scale-105"><PreviewIcon class="size-5" /></LinkButton>
-            <LinkButton href={github} name="Code" title="Código fuente" class="flex items-center gap-2 border border-white/20 rounded-full px-3 py-2 text-sm transition hover:scale-105"><GithubIcon class="size-5" /></LinkButton>
+            {
+              link.length != 0 ? <LinkButton href={link} name="Preview" title="Vista previa" class="flex items-center gap-2 border border-white/20 rounded-full px-3 py-2 text-sm transition hover:scale-105"><PreviewIcon class="size-5" /></LinkButton> : null
+            }
+            {
+              github.length != 0 ? <LinkButton href={github} name="Code" title="Código fuente" class="flex items-center gap-2 border border-white/20 rounded-full px-3 py-2 text-sm transition hover:scale-105"><GithubIcon class="size-5" /></LinkButton> : null
+            }
           </section>
         </section>
       </article>
