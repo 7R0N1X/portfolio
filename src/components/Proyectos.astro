@@ -12,10 +12,12 @@ import { PROYECTOS } from "../js/proyectos";
   <h2 class="flex items-center gap-3 text-center font-bold text-2xl sm:text-3xl mb-5 text-white/70 animate-fade-in-right"><CodeIcon class="size-7" /> Proyectos</h2>
 
   {
-    PROYECTOS.map(({ image, title, description, link, github, tags }) => (
-      <article class="w-full sm:max-w-[810px] flex flex-col sm:flex-row gap-5 mb-12 headline">
-        <Image src={image} alt={`Captura de pantalla del proyecto ${title}`} class="object-cover object-top w-full h-56 rounded-xl" />
-        <section>
+    PROYECTOS.map(({ image, title, description, link, github, tags }, index) => (
+      <article class="w-full sm:max-w-[810px] flex flex-col sm:flex-row gap-5 mb-12 headline proyecto" id={`proyecto-${index}`}>
+        <picture class="wfull sm:w-6/12 h-56 rounded-xl overflow-hidden">
+          <Image src={image} alt={`Captura de pantalla del proyecto ${title}`} class="object-cover object-top w-full h-full rounded-xl transition" id={`imgProyecto-${index}`}/>
+        </picture>
+        <section class="w-full sm:w-6/12">
           <h3 class="text-xl sm:text-2xl font-semibold sm:mt-3 mb-3 text-white/70">{title}</h3>
           <ul class="flex gap-2">
             {tags.map((tag) => (
@@ -44,4 +46,20 @@ import { PROYECTOS } from "../js/proyectos";
 <script>
   import ScrollReveal from 'scrollreveal'
   ScrollReveal().reveal('.headline', {delay: 100});
+
+  const proyectos = document.querySelectorAll('.proyecto');
+
+  proyectos.forEach((proyecto, index) => {
+
+    const imgProyecto = document.getElementById(`imgProyecto-${index}`);
+
+    proyecto.addEventListener('mouseover', () => {
+        imgProyecto.classList.add("scale-105");
+    });
+
+    proyecto.addEventListener('mouseout', () => {
+        imgProyecto.classList.remove("scale-105");
+    });
+
+});
 </script>
