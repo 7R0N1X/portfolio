@@ -33,7 +33,7 @@
    pnpm run dev
    ```
 
-## 🛠️ Stack
+### Stack
 
 ![Astro](https://img.shields.io/badge/-Astro-333333?style=flat&logo=Astro)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-333333?style=flat&logo=tailwind-css&logoColor=38B2AC)
