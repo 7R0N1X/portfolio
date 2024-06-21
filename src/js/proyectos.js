@@ -5,8 +5,7 @@ import OpenCV from "../icons/OpenCVIcon.astro";
 import GoogleColab from "../icons/GoogleColab.astro";
 
 import Proyecto1 from "../assets/proyectos/1.webp"
-import Proyecto2 from "../assets/proyectos/2.webp"
-import Proyecto3 from "../assets/proyectos/3.webp"
+import Proyecto2 from "../assets/proyectos/2.avif"
 
 const TAGS = {
   ASTRO: {
@@ -38,20 +37,11 @@ const TAGS = {
 
 export const PROYECTOS = [
   {
-    title: "<7R0N1X /> | Portfolio",
+    title: "EVOLVE GYM",
     description:
-      "Este portafolio exhibe una recopilación de los proyectos en los cuales he dedicado mi tiempo y esfuerzo.",
-    link: "https://portfolio-weld-five-97.vercel.app",
-    github: "https://github.com/7R0N1X/portfolio.git",
-    image: Proyecto3,
-    tags: [TAGS.ASTRO, TAGS.TAILWIND],
-  },
-  {
-    title: "GYM24 - Static Website",
-    description:
-      "Static Website diseñada para GYM24 que ofrece información sobre servicios, horarios, entrenadores y contacto.",
-    link: "https://gym24-three.vercel.app/",
-    github: "https://github.com/7R0N1X/gym24",
+      "Moderna landing page responsiva que presenta servicios, equipo y testimonios de clientes con un diseño profesional y atractivo.",
+    link: "https://evolve-eta.vercel.app",
+    github: "https://github.com/7R0N1X/evolve.git",
     image: Proyecto2,
     tags: [TAGS.ASTRO, TAGS.TAILWIND],
   },
