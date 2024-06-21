@@ -3,6 +3,7 @@ import TailwindCSSIcon from "../icons/TailwindCSSIcon.astro";
 import PythonIcon from "../icons/PythonIcon.astro";
 import OpenCV from "../icons/OpenCVIcon.astro";
 import GoogleColab from "../icons/GoogleColab.astro";
+import JsIcon from "../icons/stack/JsIcon.astro";
 
 import Proyecto1 from "../../public/proyectos/1.webp"
 import Proyecto2 from "../../public/proyectos/2.avif"
@@ -33,6 +34,11 @@ const TAGS = {
     class: "bg-[#E8710A] text-white/80 border border-white/20 rounded-[50px]",
     icon: GoogleColab,
   },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#FCDC00] text-[#0A0A0A] border border-white/20 rounded-[50px]",
+    icon: JsIcon,
+  }
 };
 
 export const PROYECTOS = [
@@ -43,7 +49,7 @@ export const PROYECTOS = [
     link: "https://evolve-eta.vercel.app",
     github: "https://github.com/7R0N1X/evolve.git",
     image: Proyecto2,
-    tags: [TAGS.ASTRO, TAGS.TAILWIND],
+    tags: [TAGS.ASTRO, TAGS.TAILWIND, TAGS.JAVASCRIPT],
   },
   {
     title: "Reconocimiento de Emociones",
