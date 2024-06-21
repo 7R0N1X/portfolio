@@ -4,8 +4,8 @@ import PythonIcon from "../icons/PythonIcon.astro";
 import OpenCV from "../icons/OpenCVIcon.astro";
 import GoogleColab from "../icons/GoogleColab.astro";
 
-import Proyecto1 from "../assets/proyectos/1.webp"
-import Proyecto2 from "../assets/proyectos/2.avif"
+import Proyecto1 from "../../public/proyectos/1.webp"
+import Proyecto2 from "../../public/proyectos/2.avif"
 
 const TAGS = {
   ASTRO: {
