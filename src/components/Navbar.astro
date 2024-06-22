@@ -1,5 +1,5 @@
 <header class="w-full flex justify-center items-center mt-2 fixed top-0 z-10">
-  <nav id="nav" class="px-3 text-sm text-white/70 rounded-full backdrop-blur-lg border-white/10 animate-pop">
+  <nav id="nav" class="px-3 text-sm text-white/70 rounded-full backdrop-blur-lg outline-white/20 animate-pop">
     <ul class="flex [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2 [&>li>a]:font-semibold">
       <li><a href="#" class="transition-colors hover:bg-clip-text hover:text-gray-300">Inicio</a></li>
       <li><a href="#proyectos" class="transition-colors hover:bg-clip-text hover:text-gray-300">Proyectos</a></li>
@@ -14,6 +14,6 @@
 
   window.addEventListener("scroll", function () {
     var scrollPosition = window.scrollY;
-    scrollPosition ? $nav.classList.add("border") :  $nav.classList.remove("border");
+    scrollPosition ? $nav.classList.add("outline", "outline-1") :  $nav.classList.remove("outline", "outline-1");
   });
 </script>
